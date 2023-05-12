@@ -10,7 +10,6 @@ body{
     height: 100vh;
     align-items: center;
     justify-content: center;
-    background-color: gray;
 }
 .card{
     height: 400px;
@@ -35,9 +34,111 @@ body{
     z-index: 1;
     background-color: black;
     opacity: 0;
-    transition: all 0.2s linear;
+    transition: all 0.3s linear;
+    border-radius: 20px; 
+
 }
 
+.card:hover .filter{
+    opacity: 0.4;
+}
+
+.Save{
+    height: 30px;
+    width: 50px;
+    background-color: red;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 25px;
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    opacity: 0;
+    z-index: 2;
+    transition: all 0.3s linear;
+}
+
+.Save:hover{
+    background-color: green;
+    color: yellow;
+}
+
+.card:hover .Save{
+    opacity: 1;
+    top: 10px
+}
+
+.footer{
+    position: absolute;
+    bottom: 150px;
+    width: 100%;
+    padding: 0 10px;
+    z-index: 2;
+    display: flex;
+    color: white;
+    transition: all 0.3s linear;
+    opacity: 0;
+}
+
+.icon1, .icon2{
+    color: black;
+    height: 22px;
+    width: 22px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 0.7em;
+    margin: 0 2px;
+    position: absolute;
+}
+
+.icon1:hover, .icon2:hover{
+    background-color: green;
+    color: yellow;
+    font-size: 1.1em;
+}
+
+.icon2{
+    right: 10px;
+}
+
+.icon1{
+    right: 37px;
+}
+
+.arrow{
+    position: absolute;
+    color: black;
+    margin: 3px;
+}
+
+.link{
+    height: 22px;
+    width: 140px;
+    margin-left: 15px;
+    position: relative;
+    background-color: white;
+    border-radius: 20px; 
+    
+}
+
+.card:hover .footer{
+    opacity: 1;
+    bottom: 10px;
+}
+
+.A{
+    text-decoration: none;
+    color: black;
+   margin-left: 20px;
+   overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    width: 120px;
+}
 .card:hover .filter{
     opacity: 0.4;
 }
