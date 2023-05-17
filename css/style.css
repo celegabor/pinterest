@@ -10,6 +10,7 @@ body{
     height: 100vh;
     align-items: center;
     justify-content: center;
+    background-color: gray;
 }
 .card{
     height: 400px;
@@ -34,11 +35,19 @@ body{
     z-index: 1;
     background-color: black;
     opacity: 0;
-    transition: all 0.3s linear;
-    border-radius: 20px; 
-
+    transition: all 0.2s linear;
 }
 
+.A{
+    text-decoration: none;
+    color: black;
+   margin-left: 20px;
+   overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    width: 120px;
+}
 .card:hover .filter{
     opacity: 0.4;
 }
@@ -127,15 +136,4 @@ body{
 .card:hover .footer{
     opacity: 1;
     bottom: 10px;
-}
-
-.A{
-    text-decoration: none;
-    color: black;
-   margin-left: 20px;
-   overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    display: block;
-    width: 120px;
 }
